@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPANYPROFILE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="aboutus.html"> ABOUT US </a></li>
+                    <li><a href="product.html"> PRODUCT </a></li>
+                    <li><a href="partner.html"> PARTNER </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2> THE <br>  <span>MENU</span></h2>
+                <P><I> The secret to making life better </I></P>
+                <BR>
+                <p>It’s true. The perfect cup of coffee and a wholesome, delicious meal or snack can make your day. So we make sure everything you choose is of the finest quality. Because really, isn’t that how life should be?</p>
+            </div>
+            <div class="imgbox">
+            <img src="img1.png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+        <li><img src="PROD1.png" onclick="imgSlider('prod1.png');changeCircleColor('#C8A2C8')"></li>
+        <li><img src="PROD2.png" onclick="imgSlider('PROD2.png');changeCircleColor('#FFC82A')"></li>
+        <li><img src="PROD4.png" onclick="imgSlider('PROD4.png');changeCircleColor('#FFC0CB')"></li>
+        <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#EB7495')"></li>
+        <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        
+        </ul>
+        <ul class="sci">
+            <li><a href="contact.htl"><img src="twitter.png"></li>
+                <li><a href="contact.htl"><img src="instagram.png"></li>
+                    <li><a href="contact.htl"><img src="facebook.png"></li>
+
+        </ul>     
+    </section>    
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor (color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

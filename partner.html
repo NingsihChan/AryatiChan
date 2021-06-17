@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPANYPROFILE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="aboutus.html"> ABOUT US </a></li>
+                    <li><a href="product.html"> PRODUCT </a></li>
+                    <li><a href="partner.html"> PARTNER </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2> OUR <span>PARTNER</span></h2>
+                <P><I><B> From the neighborhoods where our stores are located, to the ones where our coffee is grown – we believe in being involved in the communities we’re a part of.</B></I></P>
+                <BR>
+                <p>Bringing people together, inspiring change and making a difference in people's lives – it's all part of being a good neighbor. And it's a commitment rooted in the belief that we can use our size to bring about positive change.</p>
+                <BR>
+                    <H3>Community Service</H3>
+                    <BR>
+                        <img src="partneraja.jpg">
+                        <br>
+                        <p>
+                            We’re inspiring partners (employees) and customers alike to get involved in their communities through innovative volunteering programs.
+                        </p>
+            </div>
+            <div class="imgbox">
+            <img src="about1.png" class="starbucks">
+        </div>
+    </div>
+        <ul class="sci">
+            <li><a href="contact.html"><img src="twitter.png"></li>
+                <li><a href="contact.html"><img src="instagram.png"></li>
+                    <li><a href="contact.html"><img src="facebook.png"></li>
+
+        </ul>     
+    </section>    
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor (color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

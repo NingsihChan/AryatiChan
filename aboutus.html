@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPANYPROFILE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="aboutus.html"> ABOUT US </a></li>
+                    <li><a href="product.html"> PRODUCT </a></li>
+                    <li><a href="partner.html"> PARTNER </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2> ABOUT US</h2>
+                <P><I><B>It happens millions of times each week – a customer receives a drink from a Starbucks barista – but each interaction is unique..</B></I></P>
+                <BR>
+                <p>It’s just a moment in time – just one hand reaching over the counter to present a cup to another outstretched hand.</p>
+                <BR>
+                <P>But it’s a connection...</P>
+                <BR>
+                <P>We make sure everything we do honors that connection – from our commitment to the highest quality coffee in the world, to the way we engage with our customers and communities to do business responsibly.</P>
+                <BR>
+                <P>From our beginnings as a single store over forty years ago, in every place that we’ve been, and every place that we touch, we've tried to make it a little better than we found it.</P>
+            </div>
+            <div class="imgbox">
+            <img src="about1.png" class="starbucks">
+        </div>
+    </div>
+        <ul class="sci">
+            <li><a href="contact.html"><img src="twitter.png"></li>
+                <li><a href="contact.html"><img src="instagram.png"></li>
+                    <li><a href="contact.html"><img src="facebook.png"></li>
+
+        </ul>     
+    </section>    
+    <script type="text/javascript">
+        function imgSlider (anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor (color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
